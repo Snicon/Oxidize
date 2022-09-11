@@ -23,7 +23,7 @@ fn hande_connection(mut stream: TcpStream) {
 
     let (status_line, filename) =
         if buffer.starts_with(get) {
-            ("HTTP/1.1 200", "index.html")
+            ("HTTP/1.1 200", "Pages/App/index.html")
         } else {
             ("HTTP/1.1 404 NOT FOUND", "Pages/Errors/404.html")
         };
